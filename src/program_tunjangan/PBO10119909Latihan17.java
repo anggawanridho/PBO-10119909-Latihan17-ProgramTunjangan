@@ -14,8 +14,7 @@ public class PBO10119909Latihan17 {
 
 
     public static void main(String[] args) {
-        int gaji_pokok;
-        double tunjangan, totalgaji;
+        double gaji_pokok, tunjangan, totalgaji;
 
         System.out.print("===========Program Tunjangan===========\n");
         System.out.print("Berapa Gaji pokok anda perbulan : ");
@@ -25,9 +24,9 @@ public class PBO10119909Latihan17 {
         String status = scanner.next();
         tunjangan = (status.equals("menikah") || status.equals("Menikah"))?0.35*gaji_pokok:0;
         totalgaji = gaji_pokok + tunjangan;
-        System.out.println("Gaji Pokok \t\t: Rp "+gaji_pokok);
-        System.out.printf("Tunjangan\t\t: Rp %.0f%n", tunjangan);
-        System.out.printf("Total Gaji\t\t: Rp %.0f%n", totalgaji);
+        System.out.printf("Gaji Pokok \t\t: Rp %.1f%n",gaji_pokok);
+        System.out.printf("Tunjangan\t\t: Rp %.1f%n", tunjangan);
+        System.out.printf("Total Gaji\t\t: Rp %.1f%n", totalgaji);
         scanner.close();
 
     }
