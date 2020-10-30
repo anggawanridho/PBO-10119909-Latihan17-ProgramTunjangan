@@ -25,9 +25,9 @@ public class PBO10119909Latihan17 {
         String status = scanner.next();
         tunjangan = (status.equals("menikah") || status.equals("Menikah"))?0.35*gaji_pokok:0;
         totalgaji = gaji_pokok + tunjangan;
-        System.out.println("Gaji Pokok \t\t: "+gaji_pokok);
-        System.out.printf("Tunjangan\t\t: %.0f%n", tunjangan);
-        System.out.printf("Total Gaji\t\t: %.0f%n", totalgaji);
+        System.out.println("Gaji Pokok \t\t: Rp "+gaji_pokok);
+        System.out.printf("Tunjangan\t\t: Rp %.0f%n", tunjangan);
+        System.out.printf("Total Gaji\t\t: Rp %.0f%n", totalgaji);
         scanner.close();
 
     }
